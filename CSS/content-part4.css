@@ -1,0 +1,134 @@
+.content-part4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 750px;
+    margin: 50px 0;
+}
+
+.part-title {
+    margin-bottom: 40px;
+}
+
+.content-part4-bottom {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    gap: 120px;
+}
+
+.content-part4-bottom>div {
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid blue; */
+}
+
+.content-part4-bottom-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-part4-bottom-card {
+    position: relative;
+    width: 100%;
+    height: 570px;
+    overflow: hidden;
+    background-color: rgb(203 203 203);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content-part4-bottom-card img {
+    flex-shrink: 0;
+    width: 100%;
+    position: absolute;
+    right: -80px;
+}
+
+.content-part4-bottom-card>div {
+    position: absolute;
+    font-size: 2rem;
+}
+
+.content-part4-bottom-card>div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    left: 20px;
+    top: 50px;
+}
+
+.content-part4-bottom-card>div:first-child p {
+    position: relative;
+    font-size: .8rem;
+    font-weight: 600;
+    z-index: 0;
+}
+
+.content-part4-bottom-card>div:first-child h3 {
+    font-size: 1.8rem;
+    white-space: pre-line;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.content-part4-bottom-card>div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    bottom: 50px;
+    left: 20px;
+    font-size: 1rem;
+    z-index: 2;
+    width: 220px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 100px;
+}
+
+.content-part4-bottom-card>div:first-child p::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -11px;
+    left: -7px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #98f4f4;
+    z-index: -1;
+}
+
+.content-part4-bottom-card>div:nth-child(2) span {
+    font-size: 1rem;
+    font-weight: 600;
+    white-space: pre-line;
+}
+
+.content-part4-bottom-card>div:nth-child(2) .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgb(208, 208, 208);
+    padding: 10px 10px 10px 7px;
+    font-weight: 600;
+}
+
+.content-part4-bottom-right .content-part4-bottom-card {
+    background-color: #b59691;
+}
+
+.content-part4-bottom-right .content-part4-bottom-card-top-text {
+    color: #fff;
+}
+
+.content-part4-bottom-right .content-part4-bottom-card img {
+    top: -100px;
+    right: -110px;
+}
+
+.content-part4-bottom-right .content-part4-bottom-card>div:first-child p::after {
+    background-color: #dda336;
+}

@@ -1,0 +1,65 @@
+.nav-part {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    border: none;
+    /* 设置文字垂直方向的padding值 */
+    padding-block: 20px;
+}
+
+.nav-part-left {
+    display: flex;
+    gap: 100px;
+}
+
+.nav-part-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.9rem;
+}
+
+.nav-part-left>div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-part-left>div:first-child>img {
+    width: 30px;
+}
+
+.nav-part-left>div:first-child>span {
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+.nav-part-left>div:first-child>span>span {
+    font-weight: 600;
+    /* font-size: 22px; */
+    font-family: serif;
+}
+
+.nav-part-left>div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 0.9rem;
+}
+
+.nav-part-right>div:first-child {
+    /* 首字母大写 */
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.nav-part-right>div:last-child {
+    text-transform: capitalize;
+    color: #fff;
+    background-color: black;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-weight: 300;
+}

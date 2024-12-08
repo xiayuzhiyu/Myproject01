@@ -1,0 +1,48 @@
+:root {
+    --main-block-padding: 40px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(240 237 237);
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+}
+
+.part {
+    width: 100%;
+    height: 200px;
+    padding: 0 var(--main-block-padding);
+}
+
+footer {
+    height: 1000px;
+    background-color: aqua;
+}
+
+
+.part-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.part-title p {
+    font-size: 1.2rem;
+    /* 首字母大写 */
+    text-transform: capitalize;
+    color: rgb(96, 96, 96);
+}
+
+.part-title h1 {
+    font-size: 2.5rem;
+    /* 会根据html中的换行进行换行 */
+    white-space: pre-line;
+    /* text-transform: capitalize; */
+    font-weight: 500;
+}

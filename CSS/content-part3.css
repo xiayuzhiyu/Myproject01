@@ -1,0 +1,161 @@
+.content-part3 {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    gap: 40px;
+    font-size: 1.1rem;
+    z-index: 0;
+}
+
+.content-part3 .tab-input {
+    display: none;
+}
+
+.tab-input:checked+label+.tab-content {
+    opacity: 1;
+}
+
+.tab-box {
+    /* 可以穿过父盒子参与到上面的元素属性 */
+    display: contents;
+}
+
+.tab-bg {
+    position: absolute;
+    top: 0;
+    width: calc(100% - 80px);
+    height: 70px;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.tab-label {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-left: 20px;
+    color: rgb(122, 122, 122);
+    transition: all .3s;
+}
+
+.tab-label::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.tab-input:checked+label {
+    color: #000;
+}
+
+.tab-input:checked+label::after {
+    opacity: 1;
+}
+
+.content-part3 .tab-content {
+    position: absolute;
+    width: calc(100% - 80px);
+    height: 500px;
+    bottom: 0;
+    background-color: #fff;
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px;
+}
+
+.tab-content-left {
+    width: 40%;
+    height: 100%;
+    /* border: 1px solid brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tab-content-right {
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid brown; */
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.tab-content-left h3 {
+    font-size: 2.2rem;
+    font-weight: 200;
+}
+
+.tab-content-left span {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.tab-content-left h1 {
+    white-space: pre-line;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding: 30px 0;
+}
+
+.tab-content-left p {
+    text-transform: capitalize;
+    white-space: pre-line;
+    font-size: 1rem;
+}
+
+.button {
+    display: flex;
+    gap: 20px;
+}
+
+.button div {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 600;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.button>div:first-child {
+    color: #000;
+    text-align: center;
+    line-height: 40px;
+    font-size: .8rem;
+}
+
+.button>div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    white-space: pre-line;
+    font-size: .7rem;
+    padding: 8px;
+}
+
+.button>div:last-child::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/part3/work.jpg) no-repeat;
+    background-size: cover;
+}
+
+.tab-content-right img {
+    width: 100%;
+    height: 100%;
+}
